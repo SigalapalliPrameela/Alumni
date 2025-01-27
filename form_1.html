@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            responsive Form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+            }
+            .container{
+             width: 100%;
+             height: 100vh;
+             background-color:purple;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            }
+            .inner-container{
+                width: 75%;
+                background-color: white;
+                height: fit-content;
+                max-height: max-content;
+                
+                padding: 10px;
+            }
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                flex-grow: 1;
+                padding: 5px;
+                
+            }
+            .form-row{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+            }
+            .header
+            {
+                text-align: center;
+            }
+            .form-control
+            {
+                border-radius: 5px;
+                border:1px solid grey;
+                padding: 5px;
+                background-color: rgb(230, 224, 224);
+            }
+            .form-submit
+            {
+                border-radius: 5px;
+                border:1px solid grey;
+                background-color: blue;
+                font-size: medium;
+                color: white;
+                padding: 5px;
+            }
+            .form-label
+            {
+                padding: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="inner-container">
+                <div class="header" >
+                  <h2>Register</h2>
+                </div>
+            <form >
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="Enter FirstName"> 
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Enter LastName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">WorkingPlace</label>
+                        <input type="text" class="form-control" placeholder="Working Place">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">State</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option value="AP">AndhraPradesh</option>
+                            <option value="MP">MadhyaPradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="UP">UttarPradesh</option>
+                        </select>
+                    </div>
+                </div>
+               <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">MobileNumber</label>
+                    <input type="text" class="form-control" placeholder="MobileNumber">
+
+                </div>
+               </div>
+               <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="Email">
+
+                </div>
+               </div>
+
+               <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="text" class="form-control" placeholder="Confirm Password "> 
+                </div>
+
+               </div>
+                <div>
+                    <input type="checkbox" class="form-control">
+                    <label class="form-label">Show Password</label>
+                     
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="button" value="Submit" class="form-submit">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <p>Already an User? <a href="https://www.google.com/">Login</a></p>
+                </div>
+                
+            </form>
+            
+            </div>
+        </div>
+    </body>
+</html>
